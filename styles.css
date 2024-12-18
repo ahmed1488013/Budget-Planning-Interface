@@ -1,0 +1,125 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #4A4E69;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #1D3557;
+}
+
+header h1 span {
+    color: #4A4E69;
+    font-weight: 300;
+}
+
+/* Overview Section */
+.overview {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.progress-container {
+    margin: 20px 0;
+}
+
+.progress-bar {
+    height: 20px;
+    background: #cccccc;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-bar .progress-value {
+    height: 100%;
+    background: linear-gradient(90deg, #2980B9, #6DD5FA);
+    display: block;
+    border-radius: 10px;
+    transition: width 0.4s ease-in-out;
+}
+
+.summary-details,
+.category-details {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    margin-top: 10px;
+    color: #4A4E69;
+}
+
+.summary-details strong,
+.category-details strong {
+    color: #1D3557;
+}
+
+/* Categories Section */
+.categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.category {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.category h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #1D3557;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: #2980B9;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2173a7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    .summary-details,
+    .category-details {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
